@@ -34,6 +34,7 @@ const Slider = () => {
                     src={item.image}
                     alt={item.title}
                     height={100}
+                    
                     width={100}
                     className="size-full object-cover hover:scale-105 transition-transform duration-500 rounded-lg"
                   />
