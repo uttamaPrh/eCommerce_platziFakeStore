@@ -14,7 +14,7 @@ const Slider = () => {
       <Splide
         options={{
           type: "loop",
-          perPage: 4,
+          perPage: 3,
           perMove: 1,
           gap: "1rem",
           pagination: false,
@@ -29,12 +29,11 @@ const Slider = () => {
           return (
             <SplideSlide key={index}>
               <div className="flex relative item-center rounded-lg justify-center w-[full] h-[180px] bg-white mt-3">
-                <div className="overflow-hidden rounded-lg h-full w-[200px]">
+                <div className="overflow-hidden rounded-lg h-full w-[200px] aspect-square">
                   <Image
                     src={item.image}
                     alt={item.title}
                     height={100}
-                    
                     width={100}
                     className="size-full object-cover hover:scale-105 transition-transform duration-500 rounded-lg"
                   />

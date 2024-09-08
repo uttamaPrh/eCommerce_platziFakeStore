@@ -1,6 +1,7 @@
 import React from "react";
 import { useStore } from "@/app/store";
 import Image from "next/image";
+import ProductTag from "../productTag";
 
 const HeroSection = () => {
   const { homeData } = useStore();
@@ -13,7 +14,7 @@ const HeroSection = () => {
           return (
             <div
               key={index}
-              className={` overflow-hidden rounded-lg ${
+              className={` overflow-hidden rounded-lg relative ${
                 index === 0
                   ? "md:col-span-4 md:row-span-2"
                   : "md:col-span-2 md:row-span-1"
@@ -26,6 +27,7 @@ const HeroSection = () => {
                 height={500}
                 className="size-full object-cover hover:scale-105 transition-transform duration-500 rounded-lg"
               />
+              <ProductTag itemName={item.title} itemprice={item.price} />
             </div>
           );
         })}
