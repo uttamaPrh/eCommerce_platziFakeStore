@@ -9,11 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@splidejs/react-splide": "^0.7.12",
+    "@splidejs/splide-extension-auto-scroll": "^0.5.3",
     "axios": "^1.7.7",
     "next": "14.2.8",
     "react": "^18",
     "react-dom": "^18",
-    "swiper": "^11.1.12",
     "zustand": "^4.5.5"
   },
   "devDependencies": {
